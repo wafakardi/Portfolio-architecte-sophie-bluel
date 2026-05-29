@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Sophie Bluel</title>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+<header>
+	<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
+	<nav>
+		<ul>
+			<li>projets</li>
+			<li>contact</li>
+			<li>login</li>
+			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
+		</ul>
+	</nav>
+</header>
+  <main class="login-main">
+    <form class="login-form" id="loginForm">
+      <h1>Log In</h1>
+      <label for="email">E-mail</label>
+      <input type="email" id="email" placeholder="Entrez votre email" required>
+      <label for="password">Mot de passe</label>
+      <input type="password" id="password" placeholder="Entrez votre mot de passe" required>
+      <button type="submit">Se connecter</button>
+      <a href="#" class="forgot">Mot de passe oublié</a>
+      <div id="errorMessage" style="color:red; "></div>
+    </form>
+  </main>
+
+  <footer class="footer">
+    Mentions légales
+  </footer>
+
+ <script src="./login.js"></script>
+</body>
+</html>
