@@ -75,4 +75,5 @@ async function initcategories() {
 // Lancer le script
 initcategories();
 
+// rendre la fonction getCategories accessible depuis d'autres scripts
 window.getCategories = getCategories;

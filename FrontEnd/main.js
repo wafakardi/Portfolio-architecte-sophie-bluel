@@ -279,7 +279,8 @@ imageUpload.addEventListener('change', () => {
        
 
         alert("Projet ajouté avec succès !");
-        // Réinitialiser le formulaire
+
+   // Réinitialiser le formulaire
         photoForm.reset();
         imagePreview.classList.add('hidden');
         uploadContent.classList.remove('hidden');

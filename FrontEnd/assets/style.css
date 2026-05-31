@@ -463,11 +463,9 @@ margin-bottom: 50px;
   background-color: #1D6154;
   color: white;
   cursor: pointer;
-  margin-top: 40px;
-  
-
-
-  
+  margin: 40px auto 0;
+  display: block;
+ 
 }
 
 
@@ -493,6 +491,7 @@ margin-bottom: 50px;
   display: block;
   
 }
+
 
 
 /* Styles pour le bouton de suppression */
