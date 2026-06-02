@@ -188,16 +188,27 @@ if (isLoggedIn) {
           }
         });
 
-        if (response.ok) {
-          const deletedWork = document.querySelectorAll(`figure[data-id="${work.id}"]`);
-          deletedWork.forEach(workElement => workElement.remove());
-        }
-      });
+if (response.ok) {
+      // Supprimer dans la modale
+      figure.remove();
 
-      figure.appendChild(img);
-      figure.appendChild(deleteBtn);
-      modalGallery.appendChild(figure);
-    });
+      // Supprimer dans la galerie principale
+      const mainGalleryWork = document.querySelector(`.gallery figure[data-id="${work.id}"]`
+      );
+
+      if (mainGalleryWork) {
+        mainGalleryWork.remove();
+      }
+    } else {
+      alert("Erreur lors de la suppression du projet.");
+    }
+  });
+
+  figure.appendChild(img);
+  figure.appendChild(deleteBtn);
+
+  modalGallery.appendChild(figure);
+});
   }
 
   // Récupérer les catégories
